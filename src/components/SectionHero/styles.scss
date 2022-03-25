@@ -1,0 +1,36 @@
+.section_container {
+  max-width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(assets/desktop/image-header.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section_wrapper {
+  max-width: 750px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6rem;
+
+  > #title {
+    width: 100%;
+
+    margin-bottom: 4rem;
+
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fraunces);
+    font-weight: var(--fraunces-w900);
+    font-size: clamp(2.6rem, 5vw, 3.2rem);
+  }
+
+  > img {
+    aspect-ratio: attr(width) / attr(height);
+  }
+}
