@@ -1,4 +1,12 @@
-import './App.css';
+import { useState } from 'react';
+import FirstSection from './components/FirstSection';
+import Footer from './components/Footer';
+import GalleryImages from './components/ImagesGallery';
+import Navbar from './components/Navbar';
+import SectionHero from './components/SectionHero';
+import Sidebar from './components/Sidebar';
+import TestimonialsSection from './components/TestimonialsSection';
+import './global-styles.scss';
 
 function App() {
   const [burger, setBurger] = useState(false);
