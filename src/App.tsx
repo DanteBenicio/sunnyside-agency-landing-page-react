@@ -12,7 +12,15 @@ function App() {
   });
 
   return (
-    <h1>Hello World</h1>
+    <>
+      <Navbar isOpenBurger={burger} toggleBurgerValue={toggleBurgerValue} />
+      {burger && <Sidebar />}
+      <SectionHero />
+      <FirstSection />
+      <TestimonialsSection />
+      <GalleryImages />
+      <Footer />
+    </>
   );
 }
 
