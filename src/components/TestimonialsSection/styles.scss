@@ -31,3 +31,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .testimonial_section_wrapper {
+
+    > .testimonials_wrapper {
+      gap: 4rem;
+      flex-direction: column;
+    }
+  }
+}
