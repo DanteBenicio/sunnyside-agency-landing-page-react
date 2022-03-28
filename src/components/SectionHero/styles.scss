@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  background: url(assets/desktop/image-header.jpg) no-repeat;
+  background: url(./desktop/image-header.jpg) no-repeat; // add assets/desktop if is in development
   background-position: center center;
   background-size: cover;
 }
@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 500px) {
   .section_container {
-    background: url(assets/mobile/image-header.jpg) no-repeat;
+    background: url(./mobile/image-header.jpg) no-repeat; // add assets/desktop if is in development
     background-position: center center;
     background-size: cover;
   }
