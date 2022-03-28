@@ -14,7 +14,9 @@ function App() {
   const toggleBurgerValue = () => setBurger((prevState) => !prevState);
 
   window.addEventListener('resize', (e) => {
-    if (e.target?.innerWidth >= 768) {
+    const target = e.target as Window;
+
+    if (target.innerWidth >= 768) {
       setBurger(false);
     }
   });
