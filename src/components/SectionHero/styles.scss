@@ -34,3 +34,17 @@
     aspect-ratio: attr(width) / attr(height);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .section_container {
+    background: url(assets/mobile/image-header.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .section_wrapper {
+    #title {
+      font-size: clamp(2rem, 5vw, 2.6rem);
+    }
+  }
+}
