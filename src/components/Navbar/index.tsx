@@ -21,6 +21,11 @@ export default function Navbar() {
           </ul>
           <Button bgColor="white" />
         </div>
+        <button className={`burger_menu ${isOpenBurger ? 'active' : ''}`} type="button" onClick={toggleBurgerValue}>
+          <span />
+          <span />
+          <span />
+        </button>
       </nav>
     </header>
   );
