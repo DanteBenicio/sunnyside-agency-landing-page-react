@@ -2,7 +2,7 @@ import { NavbarProps } from '../../types/navbar';
 import Button from '../Button';
 import './styles.scss';
 
-export default function Navbar() {
+export default function Navbar({ isOpenBurger, toggleBurgerValue }: NavbarProps) {
   return (
     <header className="navbar_container">
       <nav className="navbar_wrapper">
