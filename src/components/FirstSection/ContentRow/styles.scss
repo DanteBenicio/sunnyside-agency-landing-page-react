@@ -16,6 +16,7 @@
 .text_content_container {
   display: grid;
   place-items: center;
+  padding: 1.5rem;
 }
 
 .text_content_wrapper {
@@ -27,13 +28,13 @@
     color: var(--very-dark-desaturated-blue);
     font-family: var(--fraunces);
     font-weight: var(--fraunces-w900);
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 5vw, 2.4rem);
   }
 
   > p {
     margin-bottom: 2rem;
 
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 5vw, 1rem);
     font-family: var(--barlow);
     font-weight: var(--barlow-w600);
     color: var(--dark-grayish-blue);
@@ -47,6 +48,7 @@
     font-family: var(--fraunces);
     font-weight: var(--fraunces-w900);
     text-transform: uppercase;
+    font-size: clamp(0.8rem, 5vw, 1rem);
 
     cursor: pointer;
     
@@ -90,5 +92,30 @@
   .image_mobile {
     display: none;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentrow_container {
+    flex-direction: column;
+
+    .contentrow_wrapper {
+      width: 100%;
+    }
+
+    .text_content_container {
+      min-height: 70vh;
+    }
+
+    .image_wrapper {
+      .image_desktop {
+        display: none;
+      }
+    
+      .image_mobile {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 }
