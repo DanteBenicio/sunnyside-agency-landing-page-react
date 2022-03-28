@@ -1,0 +1,22 @@
+.img {
+  flex: 1;
+  width: 200px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    width: 100%;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+}

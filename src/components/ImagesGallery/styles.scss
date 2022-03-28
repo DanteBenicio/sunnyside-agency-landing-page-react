@@ -1,0 +1,24 @@
+.gallery_images_section {
+  max-width: 100vw;
+  min-height: 50vh;
+}
+
+.gallery_images_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery_images_section {
+    min-height: auto;
+  }
+  
+  .gallery_images_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
