@@ -1,3 +1,5 @@
+import { NavbarProps } from '../../types/navbar';
+import Button from '../Button';
 import './styles.scss';
 
 export default function Navbar() {
@@ -17,7 +19,7 @@ export default function Navbar() {
               <a href="#2">Projects</a>
             </li>
           </ul>
-          <button type="button" className="contact_btn">Contact</button>
+          <Button bgColor="white" />
         </div>
       </nav>
     </header>
